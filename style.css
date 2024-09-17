@@ -1,0 +1,91 @@
+body,
+html {
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--body-bg-color);
+}
+main {
+    padding: 0 5%;
+}
+:root {
+    --body-bg-color: #ECF0F3;
+    --color1: #2c2f50;
+    --color2: #ff6021;
+    --color3: #323232;
+    --icon-color: #6748CD;
+    --logo-span-button: #2FF093;
+    --text-color1: #fff;
+    --text-color2: #6f7070;
+    --text-color3: #000;
+}
+a, ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    align-items: center;
+}
+h1, h2, h3, h4, h5, p {
+    padding: 0;
+    margin: 0;
+}
+
+.logo a {
+    color: var(--logo-span-button);
+    font-size: 25px;
+}
+
+.header {
+    border-radius: 50px;
+}
+.header .menu li a {
+    color: var(--text-color2);
+}
+.header .menu li a:hover {
+    color: var(--logo-span-button);
+}
+.header .menu .active {
+    color: var(--logo-span-button);
+}
+
+section {
+    margin: 5% 0;
+}
+
+section .card {
+    width: 290px;
+    height: 350px;
+    background-color: var(--text-color1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+section .card h2 {
+    background: -webkit-linear-gradient(315deg, var(--color1) 10%, var(--color2) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+section .card h3 {
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border: 1px solid var(--text-color1);
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: var(--logo-span-button);
+    color: var(--text-color3);
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+button:hover {
+    background-color: var(--body-bg-color);
+    border: 1px solid var(--logo-span-button);
+    color: var(--text-color3);
+}

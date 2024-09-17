@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <title>Assin 2</title>
+</head>
+
+<body>
+
+    <main>
+        <!--Header-->
+        <header>
+            <div class="container-fluid pt-4">
+                <div class="row">
+                    <div class="header d-flex justify-content-between bg-white px-5 py-3">
+                        <div class="logo fw-bolder">
+                            <a href="index.html">Pranto</a>
+                        </div>
+                        <div class="menu">
+                            <ul class="d-flex fw-bolder">
+                                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--Home Section-->
+        <section>
+            <div class="container-fluid d-flex">
+                <div class="row justify-content-between">
+                    <!--Calculate Difference-->
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h2 class="card-title">Calculate Difference</h2>
+                            <input class="my-2" type="number" id="num1" placeholder="Enter First Number" required />
+                            <input type="number" id="num2" placeholder="Enter Second Number" required>
+                            <h1 id="result">0</h1>
+                            <div class="calculateDifference">
+                                <button onclick="calculateDifference()">Show Difference</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Find Odd Number-->
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h2 class="card-title">Find Odd Number</h2>
+                            <input type="number" id="number" placeholder="123 or 4 or 99" required />
+                            <p>(input any number)</p>
+                            <h3 id="Odd">Input Number</h3>
+                            <div class="isOdd">
+                                <button onclick="isOdd()">Odd or Not</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Find Small Number-->
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h2 class="card-title">Find Small Number</h2>
+                            <input type="text" id="min" placeholder="1, 2, 4, 40, 60" required />
+                            <p>(use only comma or space for separated numbers)</p>
+                            <h3 id="findMin">Smallest Number</h3>
+                            <div class="findMin">
+                                <button onclick="findMin()">Find</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Count Even Number-->
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h2 class="card-title">Count Even Number</h2>
+                            <input type="number" id="filterEven" placeholder="Enter Number" required />
+                            <h3 id="findEven">Even Number</h3>
+                            <div class="filterEven">
+                                <button onclick="filterEvenNumbers()">Find</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Descending Number-->
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h2 class="card-title">Descending Number</h2>
+                            <input type="text" id="sortArray" placeholder="1, 2, 4, 40, 60" required />
+                            <p>(use only comma or space for separated numbers)</p>
+                            <h3 id="sortDescending">Descending</h3>
+                            <div class="sortDescending">
+                                <button onclick="sortArrayDescending()">Descending</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Convert Lower Case-->
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h2 class="card-title">Convert Lower Case</h2>
+                            <input type="text" id="lowercase" placeholder="Your Text" required />
+                            <p>(Avoid numbers)</p>
+                            <h3 id="lcFirstLetter">Lower Case</h3>
+                            <div class="sortDescending">
+                                <button onclick="lowercaseFirstLetter()">Convert</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Count Vowels-->
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h2 class="card-title">Count Vowels</h2>
+                            <input type="text" id="vowels" placeholder="Your Text / Input letter" required />
+                            <p>(Avoid numbers)</p>
+                            <h3 id="countVowels">Count</h3>
+                            <div class="countVowels">
+                                <button onclick="countVowels()">Cheak Vowels</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Count Average-->
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h2 class="card-title">Count Average</h2>
+                            <input type="text" id="avNumber" placeholder="1, 2, 4, 40, 60" required />
+                            <p>(use only comma or space for separated numbers)</p>
+                            <h3 id="average">Average</h3>
+                            <div class="findAverage">
+                                <button onclick="findAverage()">Count</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto">
+                        <div class="small m-0">Copyright nishat &copy; 2023. All rights reserved</div>
+                    </div>
+                    <div class="col-auto">
+                        <a class="small" href="#!">Privacy</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Terms</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <script src="main.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
